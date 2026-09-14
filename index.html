@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>La Voix de Dessalines</title>
 
   <style>
@@ -14,80 +15,72 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #f4f4f4;
       color: #222;
     }
 
     header {
-      background: linear-gradient(135deg, #111, #333);
+      background: linear-gradient(135deg, #071a3d, #0b4d8c);
       color: white;
-      padding: 25px 15px;
       text-align: center;
+      padding: 35px 20px;
     }
 
     header h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+      font-size: 38px;
+      margin-bottom: 10px;
     }
 
     header p {
-      font-size: 16px;
-      color: #ddd;
+      font-size: 17px;
     }
 
     nav {
-      background: #c9a227;
-      padding: 12px;
+      background: #111;
       text-align: center;
+      padding: 15px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 12px;
       font-weight: bold;
     }
 
+    nav a:hover {
+      color: #4da6ff;
+    }
+
     .hero {
-      background: linear-gradient(
-        rgba(0,0,0,0.65),
-        rgba(0,0,0,0.65)
-      ),
-      url("https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1600&q=80");
-
-      background-size: cover;
-      background-position: center;
-      min-height: 400px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 60px 20px;
       text-align: center;
-      color: white;
-      padding: 30px;
+      background: white;
     }
 
     .hero h2 {
-      font-size: 42px;
+      font-size: 32px;
       margin-bottom: 15px;
+      color: #0b4d8c;
     }
 
     .hero p {
-      font-size: 20px;
       max-width: 700px;
       margin: auto;
+      line-height: 1.7;
+      font-size: 18px;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
+    .section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .section-title {
+    .section h2 {
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 30px;
+      margin-bottom: 25px;
+      color: #0b4d8c;
     }
 
     .cards {
@@ -100,37 +93,28 @@
       background: white;
       padding: 25px;
       border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
     }
 
     .card h3 {
+      color: #0b4d8c;
       margin-bottom: 12px;
-      color: #b28b00;
+    }
+
+    .card p {
+      line-height: 1.6;
     }
 
     .emission {
-      background: #111;
+      background: #071a3d;
       color: white;
-      border-radius: 12px;
-      padding: 30px;
       text-align: center;
-      margin-top: 30px;
+      padding: 40px 20px;
+      margin-top: 40px;
     }
 
-    .emission h3 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      background: #c9a227;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
+    .emission h2 {
+      margin-bottom: 15px;
     }
 
     footer {
@@ -138,18 +122,7 @@
       color: white;
       text-align: center;
       padding: 25px;
-      margin-top: 30px;
-    }
-
-    @media (max-width: 600px) {
-      .hero h2 {
-        font-size: 30px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 6px;
-      }
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -157,102 +130,34 @@
 <body>
 
   <header>
-    <h1>LA VOIX DE DESSALINES</h1>
-    <p>Actualités • Analyses • Émissions • Informations sur Haïti</p>
+    <h1>La Voix de Dessalines</h1>
+    <p>Actualités, analyses, émissions et informations sur Haïti</p>
   </header>
 
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#actualites">Actualités</a>
     <a href="#emissions">Émissions</a>
-    <a href="#apropos">À propos</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section class="hero" id="accueil">
-    <div>
-      <h2>La voix du peuple haïtien</h2>
-      <p>
-        Une plateforme d'information, d'analyse et de réflexion
-        au service d'Haïti.
-      </p>
-      <a class="button" href="#actualites">Découvrir nos actualités</a>
-    </div>
+    <h2>Bienvenue sur La Voix de Dessalines</h2>
+    <p>
+      Une plateforme consacrée à l'information, aux analyses,
+      aux débats et aux émissions autour de l'actualité haïtienne.
+    </p>
   </section>
 
-  <section class="container" id="actualites">
-    <h2 class="section-title">Actualités</h2>
+  <section class="section" id="actualites">
+    <h2>Nos contenus</h2>
 
     <div class="cards">
 
       <div class="card">
-        <h3>Actualités d'Haïti</h3>
+        <h3>Actualités</h3>
         <p>
-          Retrouvez les informations importantes qui concernent
-          Haïti et la communauté haïtienne.
+          Retrouvez les principales informations et événements
+          concernant Haïti et sa communauté.
         </p>
-      </div>
-
-      <div class="card">
-        <h3>Analyses</h3>
-        <p>
-          Des analyses et réflexions sur les grands enjeux
-          politiques, économiques et sociaux.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>La diaspora</h3>
-        <p>
-          Découvrez les initiatives et les compétences de la
-          diaspora haïtienne à travers le monde.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="container" id="emissions">
-    <h2 class="section-title">Nos émissions</h2>
-
-    <div class="emission">
-      <h3>Sakap fèt epi sa m panse</h3>
-      <p>
-        Une émission consacrée à l'actualité, aux débats et aux
-        grandes questions qui touchent la société haïtienne.
-      </p>
-
-      <a class="button" href="#">Écouter l'émission</a>
-    </div>
-  </section>
-
-  <section class="container" id="apropos">
-    <h2 class="section-title">À propos</h2>
-
-    <div class="card">
-      <h3>La Voix de Dessalines</h3>
-      <p>
-        La Voix de Dessalines est une plateforme médiatique dédiée
-        à l'information, au débat et à la valorisation d'Haïti,
-        de sa culture et de sa diaspora.
-      </p>
-    </div>
-  </section>
-
-  <section class="container" id="contact">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="card">
-      <p>
-        Pour toute information, collaboration ou proposition,
-        contactez l'équipe de La Voix de Dessalines.
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 La Voix de Dessalines — Tous droits réservés.</p>
-  </footer>
-
-</body>
-</html>
+      </div
